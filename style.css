@@ -1,0 +1,61 @@
+header {
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  color: white;
+  background-image: url("Capa.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 80px 20px 40px 20px; 
+  position: relative; 
+}
+
+.Image {
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p{
+  font-size: 20px;
+  font-weight:700;
+}
+
+/* MENU */
+
+nav {
+  font-family: system-ui, sans-serif;
+  background-color: white;
+  padding: 10px 0;
+  border-bottom: 2px solid #CBB59B;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #6c5d4a;
+  font-size: 18px;
+  font-weight:900;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:hover {
+  color: #A39381;
+}
+
+body {
+  background-color: #F5F5DC;
+  margin: 0;
+}
