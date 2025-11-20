@@ -1,61 +1,55 @@
+/* ======== HEADER ======== */
 header {
+  font-family: system-ui, sans-serif; 
   text-align: center;
-  font-family: system-ui, sans-serif;
-  color: white;
-  background-image: url("Capa.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: white;                                     
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7); 
 
-  padding: 80px 20px 40px 20px; 
-  position: relative; 
-}
-
-.Image {
-  color: white;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+   /* Imagem de fundo */
+  background-image: url("Capa.jpg");  
+  background-position: center;                       /* Centraliza a imagem */
+  background-size: cover;                            /* Faz a imagem cobrir toda a área */
+  padding: 360px 20px 40px 80px;                     /* Espaçamento interno (topo, laterais, baixo) */
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 30px;                                  
 }
 
-p{
-  font-size: 20px;
-  font-weight:700;
+p {
+  font-size: 20px;                                   
+  font-weight: 700;                              
 }
 
-/* MENU */
-
+/* ======== MENU ======== */
 nav {
-  font-family: system-ui, sans-serif;
-  background-color: white;
-  padding: 10px 0;
-  border-bottom: 2px solid #CBB59B;
+  padding: 10px;                                      /* Espaçamento interno (vertical) */   
+  background-color: white;                         
+  border-bottom: 2px solid #CBB59B;                 /* Linha inferior */
 }
 
+/* Lista do menu */
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 200px;
-  padding: 0;
-  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 18px;                                   
+  font-weight: 900; 
+  color: #6c5d4a; 
+
+  list-style: none;                                  /* Remove os marcadores da lista */
+  display: flex;                                     /* Deixa os itens lado a lado (flexbox) */
+  justify-content: center;                           /* Centraliza os itens no menu */
+  gap: 200px;                                        /* Distância entre os links */
+  padding: 0;                                        /* Remove espaçamento padrão da lista */
+  margin: 0;                                         /* Remove margens padrão */
 }
 
-nav a {
-  color: #6c5d4a;
-  font-size: 18px;
-  font-weight:900;
-  text-decoration: none;
-  position: relative;
-}
-
+/* Efeito ao passar o mouse */
 nav a:hover {
-  color: #A39381;
+  color: #A39381;                                  /* Muda a cor do texto */
 }
 
+/* ======== BODY ======== */
 body {
-  background-color: #F5F5DC;
-  margin: 0;
+  background-color: #F5F5DC;                       
+  margin: 0;                                         /* Remove margens padrão do navegador */
 }

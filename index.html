@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
     <title>To do</title>
 </head>
 
@@ -11,24 +13,31 @@
 
 <header>
     <div class="Image">
+        <!-- Título principal da página -->
         <h2>Track your check-ins and monitor your productivity!</h2>
+
+        <!-- Slogan secundário -->
         <p> °· ✧ Dream, and realize! ✧ ·°</p>
     </div>
 </header>
 
 <div class="Options">
     <nav>
+        <!-- Menu de navegação com três seções -->
         <ul>
-            <li><a>To do</a></li>
-            <li><a>Week</a></li>
-            <li><a>Analysis</a></li>
+            <li><a>To do</a></li> 
+            <li><a>Week</a></li>     
+            <li><a>Analysis</a></li> 
         </ul>
     </nav>
+</div>
 
-    <!--TO DO --> 
-
+<!-- Seção de adicionar novas tarefas -->
 <div id="Add">
+    <!-- Campo de texto para digitar a nova tarefa -->
     <input type="text" id="newTaskInput" placeholder=" Add new task here">
+
+    <!-- Botão que chama a função addTask() ao ser clicado -->
     <button onclick="addTask()">Add</button>
 </div>
 
