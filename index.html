@@ -12,18 +12,20 @@
 <body>
 
 <header>
-    <div class="Image">
-        <!-- Título principal da página -->
-        <h2>Track your check-ins and monitor your productivity!</h2>
 
-        <!-- Slogan secundário -->
+    <!-- DIV 1 -->
+
+    <div class="Image">
+        <h2>Track your check-ins and monitor your productivity!
+        </h2>
         <p> °· ✧ Dream, and realize! ✧ ·°</p>
     </div>
 </header>
 
+    <!-- DIV 2 -->
+
 <div class="Options">
     <nav>
-        <!-- Menu de navegação com três seções -->
         <ul>
             <li><a>To do</a></li> 
             <li><a>Week</a></li>     
@@ -32,17 +34,39 @@
     </nav>
 </div>
 
-<!-- Seção de adicionar novas tarefas -->
-<div id="Add">
-    <!-- Campo de texto para digitar a nova tarefa -->
-    <input type="text" id="newTaskInput" placeholder=" Add new task here">
+    <!-- DIV 3 -->
 
-    <!-- Botão que chama a função addTask() ao ser clicado -->
-    <button onclick="addTask()">Add</button>
+<div class="Tasks"> 
+
+        <!-- Área onde o usuário adiciona novas tarefas -->
+    <div class="input-task">
+        <input 
+            type="text"
+            id="taskInput"  
+            placeholder="Digite uma nova tarefa..." 
+            onkeypress="if(event.key === 'Enter') addTask()"
+        >
+
+        <!-- type:Identificador usado no JavaScript para obter o texto digitado -->
+        <!--  id:Texto exibido quando o campo está vazio -->
+        <!-- Detecta a tecla Enter e chama a função addTask() -->
+
+        <button id="addButton" onclick="addTask()">Adicionar</button> 
+        <!-- Botão que adiciona uma nova tarefa chamando a função addTask() -->
+    </div>
+
+    <ul id="taskList"></ul> 
+    <!-- Lista onde as tarefas adicionadas serão exibidas dinamicamente pelo JavaScript -->
+
+    <div class="Progress"> <!-- Seção que mostra estatísticas das tarefas -->
+        <div>Total: <strong id="totalTasks">0</strong></div>
+        <div>Concluídas: <strong id="completedTasks">0</strong></div> 
+        <div>Pendentes: <strong id="pendingTasks">0</strong></div> 
+    </div>
 </div>
 
-<p>Testando a branch</p>
+<script src="script.js"></script> <!-- Arquivo JavaScript externo que contém as funções da aplicação -->
 
-<p>Olá</p>
+
 </body>
 </html>

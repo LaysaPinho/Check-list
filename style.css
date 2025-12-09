@@ -2,18 +2,20 @@
 header {
   font-family: system-ui, sans-serif; 
   text-align: center;
-  color: white;                                     
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7); 
+  color: #ffffff;;                                     
+  text-shadow: 2px 2px 6px rgb(188, 184, 184); 
 
    /* Imagem de fundo */
   background-image: url("Capa.jpg");  
   background-position: center;                       /* Centraliza a imagem */
   background-size: cover;                            /* Faz a imagem cobrir toda a área */
-  padding: 360px 20px 40px 80px;                     /* Espaçamento interno (topo, laterais, baixo) */
+  padding: 200px 40px 40px 40px;                     /* Espaçamento interno (topo, laterais, baixo) */
 }
 
 h2 {
-  font-size: 30px;                                  
+  font-size: 25px;  
+  justify-content: center;   
+  padding: 90px 90px 90px 90px;                                  
 }
 
 p {
@@ -46,6 +48,28 @@ nav ul {
 /* Efeito ao passar o mouse */
 nav a:hover {
   color: #A39381;                                  /* Muda a cor do texto */
+}
+
+.input-task{
+  display: flex;  
+  justify-content: center;   
+  padding: 100px 20px 40px 80px;     
+}
+
+.empty-state{
+ font-family: system-ui, sans-serif;
+ text-align: center;                       
+}
+
+.Progress{
+  font-family: system-ui, sans-serif; 
+  font-size: 18px;   
+  color: #6c5d4a;
+  font-weight: 750;
+  display: flex;                                     
+  justify-content: center;                     
+  gap: 60px;    
+  padding: 360px 20px 70px 80px;                                       
 }
 
 /* ======== BODY ======== */
